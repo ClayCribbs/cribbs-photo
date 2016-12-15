@@ -1,7 +1,7 @@
 
-<div class="row">
+<div class="row no-gutters">
 	<% @products.each do |product| %>
-		<div class="col-md-4 full">
+		<div class="col-md-4 full no-pad">
       <div class="container special">
 				<p><%= image_tag product.image.url, class: "thumb" %></p>
 
@@ -10,7 +10,7 @@
 				<p>
 					<a href='#' data-toggle="modal" data-target="#myModal_<%= product.id %>"><span class=""></span> Quick Info </a>
 				</p>
-                </div>
+        </div>
       </div>
 		</div>
 

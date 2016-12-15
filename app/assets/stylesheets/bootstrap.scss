@@ -7068,3 +7068,23 @@ input[type="checkbox"] {
 .modal .close {
   color: #222222;
 }
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+.row.no-gutters > [class^='col-'], 
+.row.no-gutters > [class*=' col-'] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+// I use those for removing side padding when necessary for an specific col
+[class^='col-'].no-pad, [class*=' col-'].no-pad {
+    padding: 0px;
+}
+[class^='col-'].no-left-pad, [class*=' col-'].no-left-pad {
+    padding-left: 0px;
+}
+[class^='col-'].no-right-pad, [class*=' col-'].no-right-pad {
+    padding-right: 0px;
+}
