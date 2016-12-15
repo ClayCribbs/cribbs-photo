@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
-  before_filter :categories, :brands
+  before_action :categories, :brands
 
   def brands
   	@brands = Product.pluck(:brand).sort.uniq!
